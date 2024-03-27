@@ -24,7 +24,6 @@
 .header__theme-menu {
   display: flex;
   justify-self: center;
-  max-height: 26px;
   margin-block-start: 20px;
 }
 
@@ -32,9 +31,6 @@
   display: flex;
   gap: 10px;
   list-style: none;
-  align-items: center;
-  padding-inline-start: 0;
-  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -102,8 +98,6 @@
   gap: 10px;
   align-items: center;
   justify-self: end;
-  width: 52px;
-  height: 26px;
   font-size: 18px;
   padding-block-start: 20px;
   padding-inline-end: 30px;
@@ -125,12 +119,12 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   filter: drop-shadow(4px 4px var(--general-title-color-shadow, #ff0070));
   margin-block-start: 240px;
-  margin-block-end: 75px;
+  margin-block-end: 60px;
 }
 
 .general_subtitle {
   margin-inline-end: 20px;
-  margin-block-start: 75px;
+  margin-block-start: 15px;
   margin-block-end: 135px !important;
 }
 
@@ -141,8 +135,6 @@
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 
 .content__first-section {
@@ -155,7 +147,7 @@
   font-family: var(--main-font, "IBM Plex Mono", sans-serif);
   margin-inline-start: 20px;
   margin-inline-end: 20px;
-  margin-block-start: 45px;
+  margin-block-start: 60px;
   font-size: 18px;
 }
 
@@ -166,7 +158,6 @@
 }
 
 .content__first-section__subtitle__multitasking {
-  margin-block-start: 15px;
   margin-block-end: 10px;
 }
 
@@ -177,8 +168,6 @@
 .section-main-text {
   color: var(--text-section-color);
   line-height: 23.4px;
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 
 .link__discover {
@@ -215,15 +204,13 @@
     "multitasking food gadget";
   gap: 20px;
   font-size: 18px;
-  padding-block-start: 65px;
-  margin-inline-start: 20px;
+  margin-block-start: 80px;
+  margin-inline: 20px;
   font-family: var(--main-font, "IBM Plex Mono", sans-serif);
-  margin-inline-end: 20px;
 }
 
 .content__second-section__title {
   font-size: inherit;
-  margin-block-end: 0;
   color: var(--text-color, #ff0070);
 }
 
@@ -258,10 +245,8 @@
   font-size: 18px;
   gap: 20px;
   font-family: var(--main-font, "IBM Plex Mono", sans-serif);
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
-  margin-block-start: 45px;
-  margin-block-end: 80px;
+  margin-inline: 20px;
+  margin-block: 80px;
 }
 
 .content__third-section__name {
@@ -275,14 +260,12 @@
   grid-area: title;
   justify-self: start;
   width: 100%;
-  margin-block-start: 15px;
 }
 
 .third-section-main-text {
   color: var(--text-section-color, #f1b2ce);
   line-height: 23.4px;
   margin-block-start: 10px;
-  margin-block-end: 0;
 }
 
 .content__third-section__sky {
@@ -306,8 +289,7 @@
 }
 
 .content__fourth-section {
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
+  margin-inline: 20px;
   margin-block-end: 55px;
 }
 
@@ -378,7 +360,7 @@
     display: flex;
     justify-self: end;
     margin-inline-end: 20px;
-    margin-block-start: clamp(10.9375rem, -1.25rem + 25.3906vw, 15rem);
+    margin-block-start: 25%;
   }
 
   .header__theme-menu-list {
@@ -386,8 +368,8 @@
   }
 
   .general-title {
-    margin-block-start: clamp(14.6875rem, 13.75rem + 1.9531vw, 15rem);
-    margin-block-end: clamp(8.125rem, 18.4375rem + -21.4844vw, 4.6875rem);
+    margin-block-start: 19%;
+    margin-block-end: 15.4%;
   }
 
   .general_subtitle {
@@ -431,13 +413,9 @@
 }
 
 @media (width < 768px) {
-  .page {
-    margin: 0;
-  }
-
   .header__theme-menu {
     margin-inline-end: 10px;
-    margin-block-start: 60px;
+    margin-block-start: 70px;
   }
 
   .decorated-zone::after {
@@ -456,20 +434,14 @@
   }
 
   .general-title {
-    font-size: (7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-block-start: 155px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 95.7px;
-    margin-block-end: 55px;
+    margin-block-end: 40px;
     margin-inline-start: 10px;
-  }
-
-  .content__second-section {
-    display: block;
   }
 
   .general_subtitle {
-    margin-inline-end: 10px;
-    margin-inline-start: 10px;
+    margin-inline: 10px;
     margin-block-end: 65px !important;
   }
 
@@ -478,28 +450,19 @@
       "title title title"
       "multitasking multitasking multitasking"
       "dopamine dopamine dopamine";
-  }
-
-  .content__first-section {
     margin-block-start: 40px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
-  }
-
-  .content__first-section__title {
-    margin: 0;
+    margin-inline: 10px;
   }
 
   .content__first-section__subtitle__multitasking {
-    margin-block-start: 0;
     margin-block-end: 10px;
   }
+
   .content__second-section {
-    padding: 0;
+    display: block;
     margin-block-start: 50px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
-    margin-block-end: 0;
+    margin-inline: 10px;
+    margin-block-end: 10px;
   }
 
   .content__second-section__title {
@@ -520,21 +483,8 @@
       "walk walk walk"
       "eat eat eat"
       "read read read";
-    margin: 10px;
-    margin-block-start: 35px;
-    gap: 0px;
-  }
-
-  .content__third-section__name {
-    margin-block-end: 0;
-  }
-
-  .content__third-section__title {
-    margin-block: 20px;
-  }
-
-  .third-section-main-text {
-    margin-block-end: 20px;
+    margin-inline: 10px;
+    margin-block: 50px;
   }
 
   .content__fourth-section {
