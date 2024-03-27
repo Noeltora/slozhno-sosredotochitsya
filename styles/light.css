@@ -5,8 +5,41 @@
 */
 
 .page.theme_light {
+  --text-color: var(--black-2, #353430);
+  --button-color: var(--black-1-transparency, #32312d40);
+  --text-title-color: var(--black-2, #353430);
+  --main-font: "IBM Plex Mono", sans-serif;
+  --bg-color-title-decor: var(--pink-3, #ff8dcb);
+  --bg-color-decorated-zone: var(--black-2, #353430);
+  --general-title-color: var(--pink-2, #ffc2e6);
+  --color-shadow: var(--pink-3, #ff8dcb);
+  --general-title-color-shadow: var(--pink-5, #ff0070);
+  --text-section-color: var(--black-2, #353430);
+  --color-rec: var(--black-2, #353430);
+  --bg-color: var(--pink-3, #ff8dcb);
+  --bg-image: url("../images/cover-image-light.png");
+  --rec-vision: hidden;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: var(--black-2, #353430);
+    --button-color: var(--black-1-transparency, #32312d40);
+    --text-title-color: var(--black-2, #353430);
+    --main-font: "IBM Plex Mono", sans-serif;
+    --bg-color-title-decor: var(--pink-3, #ff8dcb);
+    --bg-color-decorated-zone: var(--black-2, #353430);
+    --general-title-color: var(--pink-2, #ffc2e6);
+    --color-shadow: var(--pink-3, #ff8dcb);
+    --general-title-color-shadow: var(--pink-5, #ff0070);
+    --text-section-color: var(--black-2, #353430);
+    --color-rec: var(--black-2, #353430);
+    --bg-color: var(--pink-3, #ff8dcb);
+    --bg-image: url("../images/cover-image-light.png");
+    --rec-vision: hidden;
+  }
 }
