@@ -16,7 +16,7 @@
   --general-title-color-shadow: var(--pink-5, #ff0070);
   --text-section-color: var(--black-2, #353430);
   --color-rec: var(--black-2, #353430);
-  --bg-color: var(--pink-3, #ff8dcb);
+  --bg-color: var(--pink-4, #fff1f7);
   --bg-image: url("../images/cover-image-light.png");
   --rec-vision: hidden;
   /* сохраните этот селектор в приведённом виде.
@@ -38,7 +38,7 @@
     --general-title-color-shadow: var(--pink-5, #ff0070);
     --text-section-color: var(--black-2, #353430);
     --color-rec: var(--black-2, #353430);
-    --bg-color: var(--pink-3, #ff8dcb);
+    --bg-color: var(--pink-4, #fff1f7);
     --bg-image: url("../images/cover-image-light.png");
     --rec-vision: hidden;
   }
