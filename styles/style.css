@@ -2,7 +2,6 @@
 .page {
   color: var(--text-section-color, #f1b2ce);
   background-color: var(--bg-color, #000028);
-  margin-right: 0;
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
   background-size: cover;
   background-attachment: fixed;
@@ -14,6 +13,7 @@
 
 .header {
   display: grid;
+  height: 100%;
 }
 
 .header__title-decor {
@@ -24,7 +24,7 @@
 .header__theme-menu {
   display: flex;
   justify-self: center;
-  margin-block-start: 20px;
+  margin-block-start: 16px;
 }
 
 .header__theme-menu-list {
@@ -118,8 +118,7 @@
   color: var(--general-title-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   filter: drop-shadow(4px 4px var(--general-title-color-shadow, #ff0070));
-  margin-block-start: 240px;
-  margin-block-end: 60px;
+  margin-block: 240px 75px;
 }
 
 .general_subtitle {
@@ -135,6 +134,7 @@
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
+  margin-block: 0;
 }
 
 .content__first-section {
@@ -145,8 +145,7 @@
     "title dopamine dopamine";
   gap: 20px;
   font-family: var(--main-font, "IBM Plex Mono", sans-serif);
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
+  margin-inline: 20px;
   margin-block-start: 60px;
   font-size: 18px;
 }
@@ -155,19 +154,22 @@
   grid-area: title;
   font-size: inherit;
   color: var(--text-color, #ff0070);
+  margin-block: 0;
 }
 
 .content__first-section__subtitle__multitasking {
-  margin-block-end: 10px;
+  margin-block: 0 10px;
 }
 
 .content__first-section__subtitle__dopamine {
-  margin-block-end: 10px;
+  margin-block: 0 10px;
 }
 
 .section-main-text {
   color: var(--text-section-color);
   line-height: 23.4px;
+  margin-block: 0;
+  font-weight: 400;
 }
 
 .link__discover {
@@ -212,12 +214,14 @@
 .content__second-section__title {
   font-size: inherit;
   color: var(--text-color, #ff0070);
+  margin-block: 0;
 }
 
 .second-section-main-text {
   color: var(--text-section-color, #f1b2ce);
-  margin-block-start: 10px;
+  margin-block: 10px;
   line-height: 23.4px;
+  font-weight: 400;
 }
 
 .content__second-section__multitasking {
@@ -246,7 +250,17 @@
   gap: 20px;
   font-family: var(--main-font, "IBM Plex Mono", sans-serif);
   margin-inline: 20px;
-  margin-block: 80px;
+  margin-block: 70px 80px;
+}
+
+.third-section_subtitle-decor {
+  justify-self: end;
+  background-color: var(--bg-color-title-decor, #ff0070);
+  color: var(--text-title-color, #000028);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  margin-block: 0;
 }
 
 .content__third-section__name {
@@ -254,6 +268,7 @@
   font-family: inherit;
   font-size: inherit;
   color: var(--text-color, #ff0070);
+  margin-block: 0;
 }
 
 .content__third-section__title {
@@ -265,7 +280,8 @@
 .third-section-main-text {
   color: var(--text-section-color, #f1b2ce);
   line-height: 23.4px;
-  margin-block-start: 10px;
+  margin-block: 10px 0;
+  font-weight: 400;
 }
 
 .content__third-section__sky {
@@ -306,36 +322,36 @@
 
 .content__fourth-section__picture-sunset {
   grid-area: sunset;
-  width: 100%;
-  height: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   object-fit: cover;
 }
 
 .content__fourth-section__picture-ice-cream {
   grid-area: ice-cream;
-  width: 100%;
-  height: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   object-fit: cover;
 }
 
 .content__fourth-section__picture-tape {
   grid-area: tape;
-  width: 100%;
-  height: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   object-fit: cover;
 }
 
 .content__fourth-section__books {
   grid-area: books;
-  width: 100%;
-  height: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   object-fit: cover;
 }
 
 .content__fourth-section__street {
   grid-area: street;
-  width: 100%;
-  height: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   object-fit: cover;
 }
 
@@ -360,7 +376,7 @@
     display: flex;
     justify-self: end;
     margin-inline-end: 20px;
-    margin-block-start: 25%;
+    margin-block-start: 190px;
   }
 
   .header__theme-menu-list {
@@ -368,16 +384,11 @@
   }
 
   .general-title {
-    margin-block-start: 19%;
-    margin-block-end: 15.4%;
+    margin-block: 150px 130px;
   }
 
   .general_subtitle {
-    margin-block-end: clamp(
-      11.5625rem,
-      20.9375rem + -19.5313vw,
-      8.4375rem
-    ) !important;
+    margin-block-end: 183px !important;
   }
 
   .content__first-section {
@@ -391,7 +402,7 @@
       "food food food"
       "gadget gadget gadget";
     gap: 20px;
-    margin-block-end: 65px;
+    margin-block-end: 80px;
   }
 
   .second-section-main-text {
@@ -415,7 +426,7 @@
 @media (width < 768px) {
   .header__theme-menu {
     margin-inline-end: 10px;
-    margin-block-start: 70px;
+    margin-block-start: 73px;
   }
 
   .decorated-zone::after {
@@ -436,13 +447,13 @@
   .general-title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 95.7px;
-    margin-block-end: 40px;
+    margin-block: 68px 55px;
     margin-inline-start: 10px;
   }
 
   .general_subtitle {
     margin-inline: 10px;
-    margin-block-end: 65px !important;
+    margin-block-end: 67px !important;
   }
 
   .content__first-section {
@@ -460,9 +471,8 @@
 
   .content__second-section {
     display: block;
-    margin-block-start: 50px;
+    margin-block: 50px 10px;
     margin-inline: 10px;
-    margin-block-end: 10px;
   }
 
   .content__second-section__title {
@@ -470,8 +480,7 @@
   }
 
   .content__second-section__subtitle {
-    margin-block-end: 10px;
-    margin-block-start: 20px;
+    margin-block: 20px 10px;
   }
 
   .content__third-section {
@@ -489,8 +498,7 @@
 
   .content__fourth-section {
     margin-inline: 10px;
-    margin-block-start: 30px;
-    margin-block-end: 40px;
+    margin-block: 30px 40px;
   }
 
   .content__fourth-section__picture {
