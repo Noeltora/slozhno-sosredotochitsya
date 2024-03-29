@@ -8,7 +8,7 @@
   --text-color: var(--black-2, #353430);
   --button-color: var(--black-1-transparency, #32312d40);
   --text-title-color: var(--black-2, #353430);
-  --main-font: "IBM Plex Mono", sans-serif;
+  --main-font: "IBM Plex Mono";
   --bg-color-title-decor: var(--pink-3, #ff8dcb);
   --bg-color-decorated-zone: var(--black-2, #353430);
   --general-title-color: var(--pink-2, #ffc2e6);
@@ -30,7 +30,7 @@
     --text-color: var(--black-2, #353430);
     --button-color: var(--black-1-transparency, #32312d40);
     --text-title-color: var(--black-2, #353430);
-    --main-font: "IBM Plex Mono", sans-serif;
+    --main-font: "IBM Plex Mono";
     --bg-color-title-decor: var(--pink-3, #ff8dcb);
     --bg-color-decorated-zone: var(--black-2, #353430);
     --general-title-color: var(--pink-2, #ffc2e6);

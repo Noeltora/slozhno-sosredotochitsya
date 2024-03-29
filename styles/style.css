@@ -6,25 +6,26 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  font-family: var(--main-font, "IBM Plex Mono", sans-serif);
-
+  font-family: var(--main-font, "IBM Plex Mono");
+  line-height: 23.4px;
+  font-weight: 400;
+  font-size: 18px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
   display: grid;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .header__title-decor {
   max-width: clamp(22.75rem, -1.0625rem + 49.6094vw, 30.6875rem);
-  line-height: 23.4px;
 }
 
 .header__theme-menu {
   display: flex;
   justify-self: center;
-  margin-block-start: 16px;
+  margin-block-start: 17px;
 }
 
 .header__theme-menu-list {
@@ -37,7 +38,6 @@
   border: 1px solid transparent;
   position: relative;
   font-family: inherit;
-  font-size: 18px;
   background-color: transparent;
   cursor: pointer;
   text-transform: lowercase;
@@ -98,7 +98,6 @@
   gap: 10px;
   align-items: center;
   justify-self: end;
-  font-size: 18px;
   padding-block-start: 20px;
   padding-inline-end: 30px;
   color: var(--text-color, #ff0070);
@@ -118,13 +117,14 @@
   color: var(--general-title-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   filter: drop-shadow(4px 4px var(--general-title-color-shadow, #ff0070));
-  margin-block: 240px 75px;
+  margin-block: 330px 167px;
 }
 
 .general_subtitle {
   margin-inline-end: 20px;
   margin-block-start: 15px;
   margin-block-end: 135px !important;
+  font-size: inherit;
 }
 
 .title-decor {
@@ -133,8 +133,8 @@
   color: var(--text-title-color, #000028);
   font-family: inherit;
   font-weight: 700;
-  font-size: 18px;
   margin-block: 0;
+  font-size: inherit;
 }
 
 .content__first-section {
@@ -144,10 +144,9 @@
     "title multitasking multitasking"
     "title dopamine dopamine";
   gap: 20px;
-  font-family: var(--main-font, "IBM Plex Mono", sans-serif);
+  font-family: var(--main-font, "IBM Plex Mono");
   margin-inline: 20px;
   margin-block-start: 60px;
-  font-size: 18px;
 }
 
 .content__first-section__title {
@@ -159,17 +158,17 @@
 
 .content__first-section__subtitle__multitasking {
   margin-block: 0 10px;
+  font-size: inherit;
 }
 
 .content__first-section__subtitle__dopamine {
   margin-block: 0 10px;
+  font-size: inherit;
 }
 
 .section-main-text {
   color: var(--text-section-color);
-  line-height: 23.4px;
   margin-block: 0;
-  font-weight: 400;
 }
 
 .link__discover {
@@ -205,10 +204,9 @@
     "title title title"
     "multitasking food gadget";
   gap: 20px;
-  font-size: 18px;
   margin-block-start: 80px;
   margin-inline: 20px;
-  font-family: var(--main-font, "IBM Plex Mono", sans-serif);
+  font-family: var(--main-font, "IBM Plex Mono");
 }
 
 .content__second-section__title {
@@ -220,8 +218,6 @@
 .second-section-main-text {
   color: var(--text-section-color, #f1b2ce);
   margin-block: 10px;
-  line-height: 23.4px;
-  font-weight: 400;
 }
 
 .content__second-section__multitasking {
@@ -246,9 +242,8 @@
     "name walk walk"
     "name eat eat"
     "name read read";
-  font-size: 18px;
   gap: 20px;
-  font-family: var(--main-font, "IBM Plex Mono", sans-serif);
+  font-family: var(--main-font, "IBM Plex Mono");
   margin-inline: 20px;
   margin-block: 70px 80px;
 }
@@ -258,9 +253,9 @@
   background-color: var(--bg-color-title-decor, #ff0070);
   color: var(--text-title-color, #000028);
   font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
   margin-block: 0;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .content__third-section__name {
@@ -279,9 +274,7 @@
 
 .third-section-main-text {
   color: var(--text-section-color, #f1b2ce);
-  line-height: 23.4px;
-  margin-block: 10px 0;
-  font-weight: 400;
+  margin-block: 10.4px 0;
 }
 
 .content__third-section__sky {
@@ -365,7 +358,7 @@
 
 .footer_title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  font-family: var(--main-font, "IBM Plex Mono", sans-serif);
+  font-family: var(--main-font, "IBM Plex Mono");
   font-weight: 700;
   color: var(--general-title-color, #db00ff);
   filter: drop-shadow(2px 2px var(--color-shadow, #ff0070));
@@ -384,7 +377,7 @@
   }
 
   .general-title {
-    margin-block: 150px 130px;
+    margin-block: 215px 199px;
   }
 
   .general_subtitle {
@@ -401,7 +394,7 @@
       "multitasking multitasking multitasking"
       "food food food"
       "gadget gadget gadget";
-    gap: 20px;
+    gap: 20.3px;
     margin-block-end: 80px;
   }
 
@@ -453,7 +446,7 @@
 
   .general_subtitle {
     margin-inline: 10px;
-    margin-block-end: 67px !important;
+    margin-block-end: 66px !important;
   }
 
   .content__first-section {
@@ -514,5 +507,9 @@
 
   .footer {
     height: 668px;
+  }
+
+  .footer_title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
