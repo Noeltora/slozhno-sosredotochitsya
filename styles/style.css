@@ -453,8 +453,8 @@
 
   .content__third-section {
     grid-template-areas:
-      "name name"
-      "title title"
+      "name name name"
+      "title title title"
       "sky sky sky"
       "music music music"
       "walk walk walk"
