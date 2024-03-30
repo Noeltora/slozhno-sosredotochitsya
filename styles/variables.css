@@ -1,31 +1,34 @@
 :root {
   --rec-vision: visible;
 
-  --black-1: #000028;
-  --black-2: #343430;
+  --black-for-dark-theme-text-title: #000028;
+  --black-for-light-theme-text: #343430;
 
-  --pink-1: #f1b2ce;
-  --pink-2: #ffc2e6;
-  --pink-3: #ff8dcb;
-  --pink-4: #fff1f7;
-  --pink-5: #ff0070;
-  --pink-6: #db00ff;
+  --pink-for-dark-theme-section-text: #f1b2ce;
+  --pink-for-light-theme-general-title: #ffc2e6;
+  --pink-for-light-theme-decor: #ff8dcb;
+  --pink-for-light-theme-bg: #fff1f7;
+  --pink-for-dark_light-theme: #ff0070;
+  --pink-for-dark-theme-general-title-color: #db00ff;
 
-  --pink-1-transparency: #ff007040;
-  --black-1-transparency: #32312d40;
+  --pink-for-dark-theme-button-transparency: #ff007040;
+  --black-for-light-theme-button-transparency: #32312d40;
 
-  --text-color: var(--pink-5, #ff0070);
-  --button-color: var(--pink-1-transparency, #ff007040);
-  --text-title-color: var(--black-1, #000028);
-  --main-font: "IBM Plex Mono", sans-serif;
-  --bg-color-title-decor: var(--pink-5, #ff0070);
-  --bg-color-decorated-zone: var(--pink-5, #ff0070);
-  --general-title-color: var(--pink-6, #db00ff);
-  --general-title-color-shadow: var(--pink-5, #ff0070);
-  --color-shadow: var(--pink-5, #ff0070);
-  --text-section-color: var(--pink-2, #f1b2ce);
-  --color-rec: var(--pink-5, #ff0070);
-  --bg-color: var(--black-1, #000028);
+  --text-color: var(--pink-for-dark_light-theme, #ff0070);
+  --button-color: var(--pink-for-dark-theme-button-transparency, #ff007040);
+  --text-title-color: var(--black-for-dark-theme-text-title, #000028);
+  --main-font: "IBM Plex Mono", Courier, monospace;
+  --bg-color-title-decor: var(--pink-for-dark_light-theme, #ff0070);
+  --bg-color-decorated-zone: var(--pink-for-dark_light-theme, #ff0070);
+  --general-title-color: var(
+    --pink-for-dark-theme-general-title-color,
+    #db00ff
+  );
+  --general-title-color-shadow: var(--pink-for-dark_light-theme, #ff0070);
+  --color-shadow: var(--pink-for-dark_light-theme, #ff0070);
+  --text-section-color: var(--pink-for-dark-theme-section-text, #f1b2ce);
+  --color-rec: var(--pink-for-dark_light-theme, #ff0070);
+  --bg-color: var(--black-for-dark-theme-text-title, #000028);
 
   --bg-image: url("../images/cover-image-dark.png");
 }

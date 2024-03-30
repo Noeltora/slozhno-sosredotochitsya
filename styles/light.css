@@ -5,18 +5,18 @@
 */
 
 .page.theme_light {
-  --text-color: var(--black-2, #353430);
-  --button-color: var(--black-1-transparency, #32312d40);
-  --text-title-color: var(--black-2, #353430);
-  --main-font: "IBM Plex Mono", sans-serif;
-  --bg-color-title-decor: var(--pink-3, #ff8dcb);
-  --bg-color-decorated-zone: var(--black-2, #353430);
-  --general-title-color: var(--pink-2, #ffc2e6);
-  --color-shadow: var(--pink-3, #ff8dcb);
-  --general-title-color-shadow: var(--pink-5, #ff0070);
-  --text-section-color: var(--black-2, #353430);
-  --color-rec: var(--black-2, #353430);
-  --bg-color: var(--pink-4, #fff1f7);
+  --text-color: var(--black-for-light-theme-text, #353430);
+  --button-color: var(--black-for-light-theme-button-transparency, #32312d40);
+  --text-title-color: var(--black-for-light-theme-text, #353430);
+  --main-font: "IBM Plex Mono", Courier, monospace;
+  --bg-color-title-decor: var(--pink-for-light-theme-decor, #ff8dcb);
+  --bg-color-decorated-zone: var(--black-for-light-theme-text, #353430);
+  --general-title-color: var(--pink-for-light-theme-general-title, #ffc2e6);
+  --color-shadow: var(--pink-for-light-theme-decor, #ff8dcb);
+  --general-title-color-shadow: var(--pink-for-dark_light-theme, #ff0070);
+  --text-section-color: var(--black-for-light-theme-text, #353430);
+  --color-rec: var(--black-for-light-theme-text, #353430);
+  --bg-color: var(--pink-for-light-theme-bg, #fff1f7);
   --bg-image: url("../images/cover-image-light.png");
   --rec-vision: hidden;
   /* сохраните этот селектор в приведённом виде.
@@ -27,18 +27,18 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --text-color: var(--black-2, #353430);
-    --button-color: var(--black-1-transparency, #32312d40);
-    --text-title-color: var(--black-2, #353430);
-    --main-font: "IBM Plex Mono", sans-serif;
-    --bg-color-title-decor: var(--pink-3, #ff8dcb);
-    --bg-color-decorated-zone: var(--black-2, #353430);
-    --general-title-color: var(--pink-2, #ffc2e6);
-    --color-shadow: var(--pink-3, #ff8dcb);
-    --general-title-color-shadow: var(--pink-5, #ff0070);
-    --text-section-color: var(--black-2, #353430);
-    --color-rec: var(--black-2, #353430);
-    --bg-color: var(--pink-4, #fff1f7);
+    --text-color: var(--black-for-light-theme-text, #353430);
+    --button-color: var(--black-for-light-theme-button-transparency, #32312d40);
+    --text-title-color: var(--black-for-light-theme-text, #353430);
+    --main-font: "IBM Plex Mono", Courier, monospace;
+    --bg-color-title-decor: var(--pink-for-light-theme-decor, #ff8dcb);
+    --bg-color-decorated-zone: var(--black-for-light-theme-text, #353430);
+    --general-title-color: var(--pink-for-light-theme-general-title, #ffc2e6);
+    --color-shadow: var(--pink-for-light-theme-decor, #ff8dcb);
+    --general-title-color-shadow: var(--pink-for-dark_light-theme, #ff0070);
+    --text-section-color: var(--black-for-light-theme-text, #353430);
+    --color-rec: var(--black-for-light-theme-text, #353430);
+    --bg-color: var(--pink-for-light-theme-bg, #fff1f7);
     --bg-image: url("../images/cover-image-light.png");
     --rec-vision: hidden;
   }
