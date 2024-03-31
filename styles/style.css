@@ -372,7 +372,7 @@
       "multitasking multitasking multitasking"
       "food food food"
       "gadget gadget gadget";
-      gap: 20.3px;
+    gap: 20.3px;
     margin-block-end: 80px;
   }
 
@@ -427,11 +427,11 @@
     margin-inline: 10px;
   }
 
-  .content__second-section { 
-    display: block; 
-    margin-block: 50px 10px; 
-    margin-inline: 10px; 
-  } 
+  .content__second-section {
+    display: block;
+    margin-block: 50px 10px;
+    margin-inline: 10px;
+  }
 
   .content__second-section__title {
     margin-block-end: 20px;
